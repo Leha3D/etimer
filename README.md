@@ -1,2 +1,2 @@
-# eugesta-timer
+# etimer
 ttt - time to time
