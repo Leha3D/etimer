@@ -1,0 +1,24 @@
+.pdf-template-control{display:none;margin:0 0 9px;padding-top:2px}
+body.moderator-mode .pdf-template-control{display:block}
+.pdf-template-btn{display:flex;align-items:center;width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card2);color:var(--text);text-align:left;cursor:pointer;font:inherit}
+.pdf-template-source-label{display:block;margin:9px 3px 5px;color:var(--muted);font-size:11px}
+.pdf-template-source{display:block;width:100%;box-sizing:border-box;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card2);color:var(--text);font:inherit;color-scheme:dark}
+.pdf-template-btn:hover,.pdf-template-source:hover,.pdf-template-source:focus{border-color:var(--blue)}
+.pdf-template-status{min-height:17px;margin:7px 3px 0;color:var(--muted);font-size:11px;line-height:1.35;white-space:pre-line}
+.pdf-template-status.error{color:#ffadaf}.pdf-template-status.success{color:#92edc4}
+.pdf-section-btn{display:none!important}.records-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+body.moderator-mode .pdf-section-btn{display:inline-flex!important}
+.pdf-overlay[hidden],.pdf-preview[hidden],.pdf-field[hidden]{display:none!important}
+.pdf-overlay{position:fixed;inset:0;z-index:9200;display:flex;align-items:center;justify-content:center;padding:18px;background:#080d0ee6;backdrop-filter:blur(8px)}
+.pdf-dialog{width:min(1080px,100%);max-height:94dvh;overflow:auto;background:#1b2324;color:var(--text);border:1px solid #48615f;border-radius:22px;padding:24px;box-shadow:0 24px 80px #0008}
+.pdf-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.pdf-head h2{margin:0;font-size:25px}
+.pdf-close{border:1px solid #48615f;background:#253231;color:var(--text);border-radius:10px;width:42px;height:42px;font-size:25px;cursor:pointer;flex-shrink:0}
+.pdf-note,.pdf-help{font-size:13px;line-height:1.55;color:#b4c7bf;margin:12px 0 18px}
+.pdf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.pdf-field{min-width:0}.pdf-field label{display:block;margin-bottom:7px;font-size:14px;color:#c4d5ce}.pdf-field.full{grid-column:1/-1}
+.pdf-field input,.pdf-field select{box-sizing:border-box;width:100%;min-width:0;max-width:100%;height:46px;padding:0 12px;border:1px solid #48615f;border-radius:10px;background:#151c1d;color:#edf5f1;font:inherit;color-scheme:dark}
+.pdf-dialog :focus-visible{outline:2px solid #73e1ae;outline-offset:3px}
+.pdf-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:18px}.pdf-actions button,.pdf-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:10px 15px;border:1px solid #48615f;border-radius:10px;background:#253231;color:#edf5f1;font:inherit;text-decoration:none;cursor:pointer}
+.pdf-actions .pdf-primary{background:#73e1ae;color:#10201a;border-color:#73e1ae;font-weight:700}.pdf-dialog button:disabled{opacity:.5;cursor:wait}
+.pdf-status{white-space:pre-line;font-size:14px;line-height:1.5;margin:14px 0;min-height:21px;overflow-wrap:anywhere}.pdf-status.error{color:#ffadaf}.pdf-status.success{color:#92edc4}
+.pdf-summary{font-size:14px;line-height:1.6;padding:12px;background:#23312d;border-radius:10px;white-space:pre-line;overflow-wrap:anywhere}.pdf-preview iframe{width:100%;height:58vh;border:1px solid #48615f;border-radius:10px;background:#fff;margin-top:14px}.pdf-warning{color:#f0d28e;font-size:13px;line-height:1.5;white-space:pre-line}
+@media(max-width:600px){.pdf-overlay{padding:8px}.pdf-dialog{padding:17px;border-radius:16px;max-height:96dvh}.pdf-grid{grid-template-columns:1fr}.pdf-field.full{grid-column:auto}.pdf-head h2{font-size:21px}.pdf-actions>*{flex:1 1 auto}.pdf-preview iframe{height:48vh}}
